@@ -1,0 +1,73 @@
+*{
+  margin: 0px 0px;
+  padding: 0px 0px;
+  box-sizing: border-box;
+}
+.heading{
+  background-color: rgb(187, 215, 235);
+  height: 100px;
+  width:100vw;
+}
+.heading h1{
+  font-size: 3rem;
+  text-align: center;
+  padding: 10px;
+  text-shadow: 1px 1px 2px white;
+  font-family: 'Ysabeau Infant', sans-serif;
+
+}
+.container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  /* height: 100vh; */
+  width:100vw;
+  /* margin:20px 0px;  */
+  background-color:  rgb(212, 226, 236);
+
+}
+.container .card{
+  width:60%;
+  margin:100px 50px;
+  border: 1px solid whitesmoke;
+  border-radius: 4px;
+  box-shadow: 2px 2px 3px grey;
+  background-color: white;
+}
+.container .card:hover{
+  transition: 1s all ease-in-out;  
+  transform: scale(1.2);
+}
+.container .card img{
+  width:100%;
+}
+.cardinfo{
+  display: block;
+  margin: 10px auto;
+  width: 150px;
+}
+.cardinfo h1{
+  font-size: 3vw;
+  text-align: center;
+}
+.cardinfo button{
+margin: 10px 10px;
+padding: 10px 24px;
+color:rgb(170, 169, 169);
+cursor: pointer;
+}
+.cardinfo button:hover{
+  background-color: black;
+  color: white;
+}
+@media (max-width:720px){
+  .heading h1{
+    font-size: 2rem;
+  }
+  .container{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card{
+    margin:112px 50px;
+  }
+}
